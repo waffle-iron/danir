@@ -1,0 +1,9 @@
+extends layout
+
+block content 
+    h1 Cars list
+    h2 Available cars:
+    ul
+        each car, i in cars
+            li
+                a()= car.model
