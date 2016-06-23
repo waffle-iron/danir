@@ -9,14 +9,21 @@ body {
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
-
+.form-wrapper{
+  width: 300px;
+    margin: 5% auto;
+}
 .business-header {
     height: 400px;
-    background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+    /*background: url('http://placehold.it/1920x400') center center no-repeat scroll;*/
+    background: url('http://www.strainstall.com/files/6114/4430/6364/1920x400_News_and_media.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Customize the text color and shadow color and to optimize text legibility. */
@@ -24,6 +31,9 @@ body {
 .tagline {
     text-shadow: 0 0 10px #000;
     color: #fff;
+    background: rgba(255, 255, 255, 0.38);
+    padding: 25px;
+    border-radius: 15px;
 }
 
 .img-center {
