@@ -1,22 +1,29 @@
 extends layout
 
 block content 
- .form-wrapper
-   form
-    .form-group
-      .col-lg-12
-        input#inputEmail.form-control(type='text', placeholder='Email')
-        
-    .form-group
-      .col-lg-12
-        input#inputEmail.form-control(type='text', placeholder='Ваше имя')
-    .form-group
-      .col-lg-12
-        textarea#textArea.form-control(rows='3',placeholder='Ваш отзыв...',
-        style='resize:none'
-        )
+  .container
+    .row
+      .col-lg-6
+        h3 Наши контакты:
+        p
+          adress Республика Беларусь, г.Витебск, проспект Строителей д.17 оф.42
+        p
+          phone +375251567849 - Отдел продаж
+        p
+          phone +375251567842 - Техническая поддержка
+        p Мы работаем с понедельника по пятницу с 9:00 до 19:00
 
+      .col-lg-6
+       .form-wrapper
+         form(align='center')
+          h3 Оставьте свой отзыв!
+          .form-group
+            label(for='exampleInputEmail1') E-mail
+            input#exampleInputEmail1.form-control(type='email', placeholder='Email')
+          .form-group
+            label(for='exampleInputPassword1') Ваше имя
+            input#exampleInputPassword1.form-control(type='text', placeholder='Ваше имя')
+          
+          button.btn.btn-default(type='submit') Отправить
+          
 
-    .form-group
-      .col-lg-12.col-lg-offset-2(align='center',style='margin-top:5px')
-        button.btn.btn-primary(type='submit') Отправить отзыв

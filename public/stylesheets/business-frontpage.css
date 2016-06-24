@@ -9,6 +9,22 @@ body {
     font-family: 'Cuprum', sans-serif;
 }
 
+.main-page-cart .col-sm-4:hover{
+    border: 1px solid;
+    transition: all 1s ease;
+    background: rgba(24, 188, 156, 0.78);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.siteLogo{
+    height: 47px;
+    position: relative;
+    bottom: 12px;
+}
+
 h1,h2,h3{
   font-family: 'Cuprum', sans-serif;
 }
