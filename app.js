@@ -8,9 +8,6 @@ var bodyParser = require('body-parser');
 
 //Db tools
 
-var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk('127.0.0.1:27017/myapp');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -30,10 +27,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use(function(req,res,next){
-    req.db = db;
-    next();
-});
 app.use('/', routes);
 app.use('/users', users);
 

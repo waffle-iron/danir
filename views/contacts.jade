@@ -16,13 +16,19 @@ block content
       .col-lg-6
        .form-wrapper
          form(align='center')
-          h3 Оставьте свой отзыв!
-          .form-group
-            label(for='exampleInputEmail1') E-mail
-            input#exampleInputEmail1.form-control(type='email', placeholder='Email')
+          h3 Форма заявки
           .form-group
             label(for='exampleInputPassword1') Ваше имя
             input#exampleInputPassword1.form-control(type='text', placeholder='Ваше имя')
+          .form-group
+            label(for='exampleInputPassword1') Контактный телефон
+            input#exampleInputPassword1.form-control(type='text', placeholder='Телефон')
+          .form-group
+            label(for='exampleInputEmail1') E-mail
+            input#exampleInputEmail1.form-control(type='email', placeholder='Email')
+          .form-group    
+              label(for='requestInput') Текст заявки:
+              textarea.form-control#requestInput(rows="4")
           
           button.btn.btn-default(type='submit') Отправить
           
